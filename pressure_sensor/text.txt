@@ -1,0 +1,600 @@
+low rand
+output voltage = 18.100000
+
+low rand
+output voltage = 18.000000
+
+low rand
+output voltage = 17.900000
+
+low rand
+output voltage = 17.800001
+
+low rand
+output voltage = 17.900000
+
+low rand
+output voltage = 17.800001
+
+low rand
+output voltage = 17.900000
+
+low rand
+output voltage = 17.800001
+
+low rand
+output voltage = 17.900000
+
+low rand
+output voltage = 18.000000
+
+low rand
+output voltage = 18.100000
+
+low rand
+output voltage = 18.000000
+
+low rand
+output voltage = 18.100000
+
+low rand
+output voltage = 18.000000
+
+low rand
+output voltage = 18.100000
+
+low rand
+output voltage = 18.200001
+
+low rand
+output voltage = 18.300001
+
+low rand
+output voltage = 18.400000
+
+low rand
+output voltage = 18.500000
+
+low rand
+output voltage = 18.600000
+
+low rand
+output voltage = 18.700001
+
+low rand
+output voltage = 18.600000
+
+low rand
+output voltage = 18.700001
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 19.000000
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 19.000000
+
+low rand
+output voltage = 19.100000
+
+low rand
+output voltage = 19.000000
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 19.000000
+
+low rand
+output voltage = 19.100000
+
+low rand
+output voltage = 19.000000
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.700001
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.700001
+
+low rand
+output voltage = 18.600000
+
+low rand
+output voltage = 18.700001
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 19.000000
+
+low rand
+output voltage = 19.100000
+
+low rand
+output voltage = 19.200001
+
+low rand
+output voltage = 19.100000
+
+low rand
+output voltage = 19.000000
+
+low rand
+output voltage = 19.100000
+
+low rand
+output voltage = 19.200001
+
+low rand
+output voltage = 19.300001
+
+low rand
+output voltage = 19.200001
+
+low rand
+output voltage = 19.300001
+
+low rand
+output voltage = 19.400000
+
+low rand
+output voltage = 19.500000
+
+low rand
+output voltage = 19.600000
+
+low rand
+output voltage = 19.700001
+
+low rand
+output voltage = 19.600000
+
+low rand
+output voltage = 19.700001
+
+low rand
+output voltage = 19.800001
+
+low rand
+output voltage = 19.900000
+
+low rand
+output voltage = 20.000000
+
+low rand
+output voltage = 20.100000
+
+low rand
+output voltage = 20.200001
+
+low rand
+output voltage = 20.300001
+
+low rand
+output voltage = 20.400000
+
+low rand
+output voltage = 20.300001
+
+low rand
+output voltage = 20.400000
+
+low rand
+output voltage = 20.300001
+
+low rand
+output voltage = 20.200001
+
+low rand
+output voltage = 20.100000
+
+low rand
+output voltage = 20.000000
+
+low rand
+output voltage = 19.900000
+
+low rand
+output voltage = 20.000000
+
+low rand
+output voltage = 19.900000
+
+low rand
+output voltage = 19.800001
+
+low rand
+output voltage = 19.700001
+
+low rand
+output voltage = 19.600000
+
+low rand
+output voltage = 19.500000
+
+low rand
+output voltage = 19.400000
+
+low rand
+output voltage = 19.300001
+
+low rand
+output voltage = 19.200001
+
+low rand
+output voltage = 19.100000
+
+low rand
+output voltage = 19.200001
+
+low rand
+output voltage = 19.100000
+
+low rand
+output voltage = 19.200001
+
+low rand
+output voltage = 19.300001
+
+low rand
+output voltage = 19.200001
+
+low rand
+output voltage = 19.300001
+
+low rand
+output voltage = 19.200001
+
+low rand
+output voltage = 19.100000
+
+low rand
+output voltage = 19.000000
+
+low rand
+output voltage = 19.100000
+
+low rand
+output voltage = 19.200001
+
+low rand
+output voltage = 19.100000
+
+low rand
+output voltage = 19.200001
+
+low rand
+output voltage = 19.300001
+
+low rand
+output voltage = 19.200001
+
+low rand
+output voltage = 19.100000
+
+low rand
+output voltage = 19.000000
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 19.000000
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.700001
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 19.000000
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.700001
+
+low rand
+output voltage = 18.600000
+
+low rand
+output voltage = 18.700001
+
+low rand
+output voltage = 18.600000
+
+low rand
+output voltage = 18.700001
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 19.000000
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.700001
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 19.000000
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.700001
+
+low rand
+output voltage = 18.600000
+
+low rand
+output voltage = 18.500000
+
+low rand
+output voltage = 18.400000
+
+low rand
+output voltage = 18.300001
+
+low rand
+output voltage = 18.400000
+
+low rand
+output voltage = 18.500000
+
+low rand
+output voltage = 18.600000
+
+low rand
+output voltage = 18.700001
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.700001
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.700001
+
+low rand
+output voltage = 18.600000
+
+low rand
+output voltage = 18.700001
+
+low rand
+output voltage = 18.600000
+
+low rand
+output voltage = 18.700001
+
+low rand
+output voltage = 18.600000
+
+low rand
+output voltage = 18.700001
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.700001
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.700001
+
+low rand
+output voltage = 18.800001
+
+low rand
+output voltage = 18.900000
+
+low rand
+output voltage = 19.000000
+
+low rand
+output voltage = 19.100000
+
+low rand
+output voltage = 19.200001
+
+low rand
+output voltage = 19.300001
+
+low rand
+output voltage = 19.400000
+
+low rand
+output voltage = 19.500000
+
+low rand
+output voltage = 19.600000
+
+low rand
+output voltage = 19.500000
+
+low rand
+output voltage = 19.400000
+
+low rand
+output voltage = 19.300001
+
+low rand
+output voltage = 19.200001
+
+low rand
+output voltage = 19.300001
+
+low rand
+output voltage = 19.400000
+
+low rand
+output voltage = 19.300001
+
+low rand
+output voltage = 19.400000
+
+low rand
+output voltage = 19.300001
+
+low rand
+output voltage = 19.400000
+
+low rand
+output voltage = 19.300001
+
+low rand
+output voltage = 19.400000
+
+low rand
+output voltage = 19.500000
+
+low rand
+output voltage = 19.600000
+
+low rand
+output voltage = 19.500000
+
+low rand
+output voltage = 19.600000
+
+low rand
+output voltage = 19.700001
+
+low rand
+output voltage = 19.600000
+
+low rand
+output voltage = 19.700001
+
+low rand
+output voltage = 19.800001
+
+low rand
+output voltage = 19.900000
+
+low rand
+output voltage = 19.800001
+
+low rand
+output voltage = 19.700001
+
+low rand
+output voltage = 19.600000
+
+low rand
+output voltage = 19.500000
+
+low rand
+output voltage = 19.600000
+
