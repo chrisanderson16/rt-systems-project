@@ -1,8 +1,0 @@
-{
-    "files.associations": {
-        "math.h": "c",
-        "gps.h": "c",
-        "camera.h": "c",
-        "time.h": "c"
-    }
-}

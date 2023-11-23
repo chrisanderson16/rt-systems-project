@@ -22,14 +22,15 @@
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
-#include "/home/chris/school/rt-systems/project/inc/pressure_sensor.h"
+
+#include "../../inc/pressure_sensor/pressure_sensor.h"
 
 // This is where our program will change pressure based on "movement"
 void pressureSensorEmulator(void)
 {
     // Assume vessel starts at the relative surface
     float initPressure      = 0.0;          // atm (gauge)
-    float currPressure      = 0.0;          // atm (gauge)
+    float currPressure      = initPressure; // atm (gauge)
     float initVoltage       = 100;          // mV
     float currVoltageOut    = initVoltage;  // mV
 
@@ -46,7 +47,8 @@ void pressureSensorEmulator(void)
         //printf("i = %d\nCurrent Pressure = %fatm\nCurrent output Voltage = %f\n\n", i, currPressure, currVoltageOut);
     }
 
-// Now, we're at the level we want to be at, the for-loop can probably be removed, it was more for debugging
+// ##### Now, we're at the level we want to be at, the for-loop can probably be removed, it was more for debugging
+// #### This can be the actual task that is continuously run.
     
     for(int i = 0; i < 200; i++)
     {
@@ -56,27 +58,21 @@ void pressureSensorEmulator(void)
 
         if(r < 50)
         {
-        
             currPressure -= 1; // We moved up, so the pressure is decreased
             currVoltageOut = currPressure * mV_per_atm;
-      
-            
         }else{
-
             currPressure += 1; // We moved down, so the pressure is increased
             currVoltageOut = currPressure * mV_per_atm;
-      
-
         }
 
-
         printf("low rand\noutput voltage = %f\n\n", currVoltageOut);
-
     }
 
     return;
 }
 
+
+/*
 int main(void)
 {
 // Initialize random number
@@ -87,3 +83,5 @@ int main(void)
 
     return 0;
 }
+
+*/
