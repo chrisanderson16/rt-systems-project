@@ -16,7 +16,7 @@
 #include "../../inc/camera/camera.h"
 
 
-
+/*
 int main(void)
 {
 
@@ -41,7 +41,7 @@ int main(void)
 
     return 0;
 }
-
+*/
 
 camera_t take_photo(camera_t camera)
 {

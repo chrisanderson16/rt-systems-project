@@ -38,12 +38,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
-#include "/home/chris/school/rt-systems/project/inc/imu.h"
+#include "../../inc/imu/imu.h"
 
 #define PI atan(1)*4
 
-
-
+/*
 int main(void)
 {
     srand(time(NULL));
@@ -80,7 +79,7 @@ int main(void)
 
     return 0;
 }
-
+*/
 
 relative_t change_pos(relative_t currPos)
 {

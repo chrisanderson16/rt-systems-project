@@ -1,0 +1,5 @@
+{
+    "files.associations": {
+        "pressure_sensor.h": "c"
+    }
+}
