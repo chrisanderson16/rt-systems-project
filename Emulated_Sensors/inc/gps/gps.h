@@ -20,10 +20,17 @@ typedef struct gps_notation
     // This will be used further with the GPS sensor module, for now it is just a way to display the information
     float latitude;
     float longitude;
-    float height;
+    float altitude;
 
     time_t timeAtTx;
 
 }gps_t; // Decimal degrees are easier than multiple DMS
+
+
+
+gps_t delta_receiver_satellite(gps_t receiver, gps_t satellite);
+float find_time_to_receiver(gps_t abs_dist);
+
+
 
 #endif
