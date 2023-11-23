@@ -79,9 +79,25 @@ int main(void)
 
     cam = take_photo(cam);
 
-    printf("Camera name is %s\n", cam.camera_name);
 
-    printf("Curr System time is %s\n", cam.currTime);
+    /**
+ * Everything that needs printed:
+ *      [x] camera_name     // name of camera, done in main
+        [x] file_format     // file extension
+        [x] image_data      // description rather than actual image
+        [x] currTime         
+        [x] pic_name        // initialized to 0 in main
+        [x] pic_height
+        [x] pic_width
+        [x] global_location; 
+*/
+
+    printf("Picture taken with %s at time %s\n",cam.camera_name,cam.currTime);
+    printf("Show Photo: \n    %s\n", cam.image_data);
+    printf("Show Photo Metadata: \n    Captured with: %s\n    Time: %s\n    Name: %d.%s\n    Dimensions: %d x %d\n    Location: Lat %f and Long %f\n", \
+            cam.camera_name, cam.currTime, cam.pic_name, cam.file_format, cam.pic_width, cam.pic_height, \
+            cam.global_location.latitude, cam.global_location.longitude);
+    
 
 
     return 0;

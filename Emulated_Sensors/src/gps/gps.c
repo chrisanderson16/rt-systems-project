@@ -16,6 +16,22 @@
 
 // #########CHANGE TO LAT AND LONG
 
+/**
+ * Satellites send the following data:
+ *      Latitude
+ *      Longitude
+ *      Height
+ *      
+ *      Current Time on Satellite
+ * 
+ * Receiver needs to:
+ *      At time message is received, subtract current time from that to find distance between
+ *      
+ *      Do that for at least 4, then use their Lat and Long to find where receiver is.
+ * 
+ * */ 
+    
+
 /*
  * Satellite 1
  * 56, 30, 14.473 N
@@ -32,45 +48,11 @@
 
 //GPS signal is ~1.5 GHz, microwaves
 
-// This will be run 3 times to get 3 different satellite
-dms_t * init_satellite(dms_t * satellite)
-{
-    
-    satellite[0].degree = 7;
-    
-    
-    return NULL;
-}
-
-// This will be run 3 times to get the time to each satellite
-time_t time_to_satellite(dms_t satellite)
-{
-
-}
-
-// This will triangulate the position based on each satellite
-dms_t get_receiver_dms(dms_t * satellites)
-{
-
-}
-
 
 int main(void)
 {
 // Initialize pseudo randomness
     srand(time(NULL));
-
-// Receiver of location we need to find
-    dms_t receiver;
-
-// Satellites are in an array
-    dms_t * satellite1[2];
-    dms_t * satellite2[2];
-    dms_t * satellite3[2];
-
-
-    satellite1 = init_satellite(satellite1);
-
 
 
     return 0;

@@ -47,6 +47,18 @@ camera_t take_photo(camera_t camera)
 {
 // In this function, we want to generate pseudo random image metadata
 
+/**
+ * Everything that needs to be generated for each time a picture is taken:
+ *      [x] camera_name     // name of camera, done in main
+        [x] file_format     // file extension
+        [x] image_data      // description rather than actual image
+        [x] currTime         
+        [x] pic_name        // initialized to 0 in main
+        [x] pic_height
+        [x] pic_width
+        [x] global_location; 
+*/
+
     // Change picture name
     int img_name = camera.pic_name + 1;
     camera.pic_name = img_name;
@@ -74,26 +86,24 @@ camera_t take_photo(camera_t camera)
     camera.image_data = image_taken;
 
 
-    // Initialize new GPS location
-    dms_t currPos[2];
+/**
+ * Hebron Oil Platform is at:
+ *   47° 49' 23.8500'' N 53° 52' 21.1000'' W
+ *              OR
+ *   lat 47.82329167 long -53.87252778
+ * 
+ *  This is the equation for DMS -> DD (lat and longitude)
+ *          DD = d + (min/60) + (sec/3600)
+ * 
+*/
 
-// ############# CHANGE TO LAT AND LONG
-
+    gps_t currPos;
 
 // The follow coordinates are for the Hebron Oil Rig off the coast of Newfoundland
-    currPos[0].degree = 47;
-    currPos[0].minute = 49;
-    currPos[0].second = 23.85;
-    currPos[0].cardinal_direction = 'N';
+    currPos.latitude = 47.82329167;
+    currPos.longitude = -53.87252778;
 
-    currPos[1].degree = 53;
-    currPos[1].minute = 52;
-    currPos[1].second = 21.1;
-    currPos[1].cardinal_direction = 'W';
-
-    // Set camera's/rov's location to these coords
-    camera.global_location[0] = currPos[0];
-    camera.global_location[1] = currPos[1];
+    camera.global_location = currPos;
 
     return camera;
 }
