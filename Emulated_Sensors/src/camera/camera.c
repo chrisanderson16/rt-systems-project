@@ -13,38 +13,9 @@
 #include <math.h>
 #include <string.h>
 
-typedef struct gps_notation
-{
-// This will be used further with the GPS sensor module, for now it is just a way to display the informantion
-    int degree;
-    int minute;
-    float second;
-    char cardinal_direction;
-
-}gps_location_t;
-
-typedef struct camera_metadata
-{
-    char * camera_name; // This will be initialized in main
-
-    int pic_name;       // We give the picture a number for a name
-
-    char * file_format; // File format of the image.
-
-    char * image_data;     // This will just be a dummy variable that "holds" the image data
-
-    gps_location_t global_location[2];   // These values will be "GPS" location of the photo
-
-    int pic_height;     // The size of the image, in pixels
-    int pic_width;
-
-    char * currTime;    // Time will be attached to the photo
-
-}camera_t;
+#include "../../inc/camera/camera.h"
 
 
-
-camera_t take_photo(camera_t camera);
 
 int main(void)
 {
@@ -104,7 +75,10 @@ camera_t take_photo(camera_t camera)
 
 
     // Initialize new GPS location
-    gps_location_t currPos[2];
+    dms_t currPos[2];
+
+// ############# CHANGE TO LAT AND LONG
+
 
 // The follow coordinates are for the Hebron Oil Rig off the coast of Newfoundland
     currPos[0].degree = 47;

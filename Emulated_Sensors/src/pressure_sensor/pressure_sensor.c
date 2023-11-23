@@ -22,9 +22,10 @@
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
+#include "/home/chris/school/rt-systems/project/inc/pressure_sensor.h"
 
 // This is where our program will change pressure based on "movement"
-void pressureSensor(void)
+void pressureSensorEmulator(void)
 {
     // Assume vessel starts at the relative surface
     float initPressure      = 0.0;          // atm (gauge)
@@ -82,7 +83,7 @@ int main(void)
     srand(time(NULL));
 
 // Run pressure program
-    pressureSensor();
+    pressureSensorEmulator();
 
     return 0;
 }
