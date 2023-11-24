@@ -1,0 +1,35 @@
+/*
+ * GPSSensor.h
+ *
+ *  Created on: Nov 23, 2023
+ *      Author: chris
+ */
+
+#ifndef INC_USER_L3_GPSSENSOR_H_
+#define INC_USER_L3_GPSSENSOR_H_
+
+#include "FreeRTOS.h"
+#include "timers.h"
+
+// Class that will be used to keep track of location
+typedef struct gps_notation
+{
+    // Maybe use this?
+    int ID;
+
+    // This will be used further with the GPS sensor module, for now it is just a way to display the information
+    float latitude;
+    float longitude;
+    float altitude;
+
+    uint32_t timeToRx;
+
+}gps_t; // Decimal degrees are easier than multiple DMS
+
+
+
+void RunGPSSensor(TimerHandle_t xTimer);
+
+
+
+#endif /* INC_USER_L3_GPSSENSOR_H_ */

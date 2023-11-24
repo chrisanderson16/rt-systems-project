@@ -1,0 +1,93 @@
+/*
+ * CameraSensor.c
+ *
+ *  Created on: Nov 23, 2023
+ *      Author: Chris Anderson
+ */
+
+#include <stdbool.h>
+#include <stdlib.h>
+#include <time.h>
+#include <math.h>
+#include <string.h>
+
+#include "User/L2/Comm_Datalink.h"
+#include "User/L3/CameraSensor.h";
+#include "User/L3/GPSSensor.h";
+
+//Required FreeRTOS header files
+#include "FreeRTOS.h"
+#include "Timers.h"
+
+
+/******************************************************************************
+This is a software callback function.
+******************************************************************************/
+void RunCameraSensor(TimerHandle_t xTimer)
+{
+	srand(time(NULL));
+
+	static camera_t cam;
+
+	static uint8_t * camera_model = "Sensor Platform Camera";
+	cam.camera_name = camera_model;
+
+	static uint16_t img_name = 0;
+	cam.pic_name = img_name;
+
+
+    // Change picture name
+    uint16_t img_name = cam.pic_name + 1;
+    cam.pic_name = img_name;
+
+
+    // Set picture format to jpg
+    static uint8_t * f_format = "jpg";
+    cam.file_format = f_format;
+
+
+    // Set picture size
+    cam.pic_height = 600;
+    cam.pic_width = 800;
+
+
+    // Set time of picture taken
+    time_t mytime = time(NULL);
+    static uint8_t * time_str = ctime(&mytime);
+    time_str[strlen(time_str)-1] = '\0';
+    cam.currTime = time_str;
+
+
+    // Photo description in place of actual image data
+    uint8_t * image_taken = "A nice hunk of metal that needs to be wielded.";
+    cam.image_data = image_taken;
+
+
+/**
+ * Hebron Oil Platform is at:
+ *   47° 49' 23.8500'' N 53° 52' 21.1000'' W
+ *              OR
+ *   lat 47.82329167 long -53.87252778
+ *
+ *  This is the equation for DMS -> DD (lat and longitude)
+ *          DD = d + (min/60) + (sec/3600)
+ *
+*/
+
+    static gps_t currPos;
+
+// The follow coordinates are for the Hebron Oil Rig off the coast of Newfoundland
+    currPos.latitude = 47.82329167;
+    currPos.longitude = -53.87252778;
+    currPos.altitude = 0.0;
+
+    cam.global_location = currPos;
+
+
+    // Add a delay here
+    vTaskDelay(10);
+
+// HERE NEEDS TO BE EDITED TO WORK WITH CERTAIN OUTPUT
+    // Its supposed to output the entire metadata string, aka the cam object
+	send_sensorData_message(Camera, cam); // CHANGE DEPTH TO CAMERA
+}
