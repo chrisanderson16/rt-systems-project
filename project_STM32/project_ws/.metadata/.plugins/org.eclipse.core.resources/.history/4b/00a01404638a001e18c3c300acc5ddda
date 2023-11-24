@@ -1,0 +1,76 @@
+/*
+ * IMUSensor.c
+ *
+ *  Created on: Nov 23, 2023
+ *      Author: Chris Anderson
+ */
+
+#include <stdbool.h>
+#include <stdlib.h>
+#include <time.h>
+#include <math.h>
+
+#include "User/L2/Comm_Datalink.h"
+#include "User/L3/PressureSensor.h";
+
+//Required FreeRTOS header files
+#include "FreeRTOS.h"
+#include "Timers.h"
+
+#define PI atan(1)*4
+
+/******************************************************************************
+This is a software callback function.
+******************************************************************************/
+void RunPressureSensor(TimerHandle_t xTimer)
+{
+	srand(time(NULL));
+
+	static relative_t rov;
+
+    // Accelerometer (change relative position due to waves)
+    rov.x_axis              = 0.0; // m
+    rov.y_axis              = 0.0; // m
+    rov.z_axis              = 0.0; // m
+
+    // Gyroscope (when relative change of rotational position of ROV change)
+    rov.x_axis_pitch        = 0.0; // dps (deg/s)
+    rov.y_axis_yaw          = 0.0; // dps
+    rov.z_axis_roll         = 0.0; // dps
+
+    switch(rand() % 6)
+    {
+    	case 0:
+// Do something here to change the x-axis
+    		currPos.x_axis += ((float)(rand() % 10) / 20.0)*(powf((float)(-1.0),(float)(rand() % 2)));
+            break;
+        case 1:
+// Do something here to change the y-axis
+            currPos.y_axis += ((float)(rand() % 10) / 20.0)*(powf((float)(-1.0),(float)(rand() % 2)));
+            break;
+        case 2:
+// Do something here to change the z-axis
+            currPos.z_axis += ((float)(rand() % 10) / 20.0)*(powf((float)(-1.0),(float)(rand() % 2)));
+            break;
+        case 3:
+// Do something here to change the pitch
+            currBearings.x_axis_pitch += (((float)(rand() % 10) / 20.0)*(powf((float)(-1.0),(float)(rand() % 2)))) * (360/(2*PI));
+            break;
+        case 4:
+// Do something here to change the yaw
+            currBearings.y_axis_yaw += (((float)(rand() % 10) / 20.0)*(powf((float)(-1.0),(float)(rand() % 2)))) * (360/(2*PI));
+            break;
+        case 5:
+// Do something here to change the roll
+            currBearings.z_axis_roll += (((float)(rand() % 10) / 20.0)*(powf((float)(-1.0),(float)(rand() % 2)))) * (360/(2*PI));
+            break;
+        default:
+// Should never get here
+            //printf("Awkward, something went wrong with changing individual axis values\n");
+            break;
+    }
+
+
+
+	send_sensorData_message(Depth, currentVoltage); // CHANGE DEPTH TO PRESSURE
+}

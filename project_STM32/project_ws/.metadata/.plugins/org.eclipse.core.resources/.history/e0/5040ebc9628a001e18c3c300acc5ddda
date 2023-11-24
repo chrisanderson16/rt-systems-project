@@ -1,0 +1,34 @@
+/*
+ * IMUSensor.c
+ *
+ *  Created on: Nov 23, 2023
+ *      Author: Chris Anderson
+ */
+
+#include <stdbool.h>
+#include <stdlib.h>
+#include <time.h>
+#include <math.h>
+
+#include "User/L2/Comm_Datalink.h"
+#include "User/L3/PressureSensor.h";
+
+//Required FreeRTOS header files
+#include "FreeRTOS.h"
+#include "Timers.h"
+
+
+
+/******************************************************************************
+This is a software callback function.
+******************************************************************************/
+void RunPressureSensor(TimerHandle_t xTimer)
+{
+	srand(time(NULL));
+
+	relative_t rov;
+
+
+
+	send_sensorData_message(Depth, currentVoltage); // CHANGE DEPTH TO PRESSURE
+}
